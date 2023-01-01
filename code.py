@@ -186,7 +186,7 @@ start_time = 0
 end_time = 0
 clock_adjustment = 0
 done = False
-NEW_YEAR = time.mktime(time.struct_time((2022, 1, 1, 0, 0, 0, 5, 1, 0)))
+NEW_YEAR = time.mktime(time.struct_time((2023, 1, 1, 0, 0, 0, 5, 1, 0)))
 # test with a different time
 # NEW_YEAR = time.mktime(time.struct_time((2021, 12, 30, 22, 21, 0, 3, 1, 0)))
 while True:
@@ -214,7 +214,7 @@ while True:
         glasses.left_ring.fill(ring_color)
         glasses.right_ring.fill(ring_color)
         display_left(digits(20))
-        display_right(digits(22))
+        display_right(digits(23))
         glasses.show()
         continue
     if end_time == (time.time() + clock_adjustment):
