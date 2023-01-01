@@ -11,6 +11,7 @@ import board
 import digitalio
 from busio import I2C
 import adafruit_is31fl3741
+
 from adafruit_is31fl3741.adafruit_ledglasses import LED_Glasses
 from eyelights_anim import EyeLightsAnim
 import adafruit_ble
@@ -147,10 +148,12 @@ def digits(n):
 def digits_full(n):
     return [n // 100000 % 10, n // 10000 % 10, n // 1000 % 10, n // 100 % 10, n // 10 % 10, n % 10]
 
-def display(num, offset):
+ddef display(num, offset):
+    #set color to orange
+    color = gammify((255, 100, 0))
     for y in range(5):
         for x in range(3):
-            glasses.pixel(x+offset, y, num[y][x]*100)
+            glasses.pixel(x+offset, y, num[y][x]*color)
 
 def display_digits_full(ds):
     ring_val = ds[0]*10 + ds[1]
