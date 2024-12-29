@@ -148,7 +148,7 @@ def digits(n):
 def digits_full(n):
     return [n // 100000 % 10, n // 10000 % 10, n // 1000 % 10, n // 100 % 10, n // 10 % 10, n % 10]
 
-ddef display(num, offset):
+def display(num, offset):
     #set color to orange
     color = gammify((255, 100, 0))
     for y in range(5):
