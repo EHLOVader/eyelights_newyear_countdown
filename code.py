@@ -189,7 +189,7 @@ start_time = 0
 end_time = 0
 clock_adjustment = 0
 done = False
-NEW_YEAR = time.mktime(time.struct_time((2025, 1, 1, 0, 0, 0, 5, 1, 0)))
+NEW_YEAR = time.mktime(time.struct_time((2026, 1, 1, 0, 0, 0, 5, 1, 0)))
 # test with a different time
 # NEW_YEAR = time.mktime(time.struct_time((2021, 12, 30, 22, 21, 0, 3, 1, 0)))
 while True:
