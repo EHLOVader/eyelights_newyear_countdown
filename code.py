@@ -217,7 +217,7 @@ while True:
         glasses.left_ring.fill(ring_color)
         glasses.right_ring.fill(ring_color)
         display_left(digits(20))
-        display_right(digits(25))
+        display_right(digits(26))
         glasses.show()
         continue
     if end_time == (time.time() + clock_adjustment):
